@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100vh;
+  background-color: rgb(30, 30, 40);
+}
+/* Map */
+#map {
+  height: 100%;
+}
+/* Clock */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  background-color: rgba(30, 30, 40);
+  position: relative;
+  z-index: -2;
+}
+.clock::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('時鐘背景.png') no-repeat 100% 100% / cover;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+.clock > .clock-center {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock > .hour-hand,
+.clock > .minute-hand,
+.clock > .second-hand {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: center bottom;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.clock > .hour-hand {
+  width: 8px;
+  height: 25%;
+  left: calc(50% - 4px);
+}
+.clock > .minute-hand {
+  width: 6px;
+  height: 40%;
+  left: calc(50% - 3px);
+}
+.clock > .second-hand {
+  width: 2px;
+  height: 45%;
+  left: calc(50% - 1px);
+  background-color: rgba(230, 0, 0, 0.8);
+  box-shadow: 3px 3px 4px rgba(255, 0, 0, 0.6);
+}
+/* Clock transition */
+.clock.transition .hour-hand,
+.clock.transition .minute-hand,
+.clock.transition .second-hand {
+  transition: 1s;
+}
+/* Time Text */
+.time-content {
+  margin-top: 50px;
+  padding: 15px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+}
+.time-content > .city-text {
+  font-family: '微軟正黑體';
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.time-content > .time-text {
+  font-size: 50px;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.time-content > .date-text {
+  letter-spacing: 2px;
+  text-align: right;
+}
+/* Search */
+#side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  z-index: 1000;
+}
+.search {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.search i {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+.search-input,
+.search-list {
+  font-family: '微軟正黑體';
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.search-input {
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search-list {
+  height: 0;
+  overflow-y: scroll;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-list::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.search-list > .item {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.search-list > .item:hover {
+  background-color: rgba(255, 166, 0, 0.5);
+}
