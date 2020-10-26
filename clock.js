@@ -57,7 +57,7 @@ xhr.onload = () => {
     let map = L.map('map', {
       center: initTimeZone.latlng,
       zoom: 5,
-      minZoom: 3,
+      minZoom: 2,
       maxZoom: 5,
       zoomControl: false,
       maxBounds: bounds,

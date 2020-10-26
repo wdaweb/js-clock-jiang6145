@@ -148,5 +148,131 @@
     "latlng": [24.62954147281562, 46.71524047851563],
     "timeZone": "Asia/Riyadh",
     "id": 24
+  },
+  {
+    "region": "英國/倫敦",
+    "latlng": [51.509865, -0.118092],
+    "timeZone": "Europe/London",
+    "id": 25
+  },
+  {
+    "region": "愛爾蘭/都柏林",
+    "latlng": [53.349804, -6.26031],
+    "timeZone": "Europe/Dublin",
+    "id": 26
+  },
+  {
+    "region": "法國/巴黎",
+    "latlng": [48.856613, 2.352222],
+    "timeZone": "Europe/Paris",
+    "id": 27
+  },
+  {
+    "region": "比利時/布魯塞爾",
+    "latlng": [50.850346, 4.351721],
+    "timeZone": "Europe/Brussels",
+    "id": 28
+  },
+  {
+    "region": "荷蘭/阿姆斯特丹",
+    "latlng": [52.370216, 4.895168],
+    "timeZone": "Europe/Amsterdam",
+    "id": 29
+  },
+  {
+    "region": "德國/柏林",
+    "latlng": [52.520008, 13.404954],
+    "timeZone": "Europe/Berlin",
+    "id": 30
+  },
+  {
+    "region": "瑞士/蘇黎世",
+    "latlng": [47.376888, 8.541694],
+    "timeZone": "Europe/Zurich",
+    "id": 31
+  },
+  {
+    "region": "匈牙利/布達佩斯",
+    "latlng": [47.497913, 19.040236],
+    "timeZone": "Europe/Budapest",
+    "id": 32
+  },
+  {
+    "region": "奧地利/維也納",
+    "latlng": [48.208176, 16.373819],
+    "timeZone": "Europe/Vienna",
+    "id": 33
+  },
+  {
+    "region": "捷克共和國/布拉格",
+    "latlng": [50.075539, 14.4378],
+    "timeZone": "Europe/Prague",
+    "id": 34
+  },
+  {
+    "region": "波蘭/華沙",
+    "latlng": [52.229675, 21.01223],
+    "timeZone": "Europe/Warsaw",
+    "id": 35
+  },
+  {
+    "region": "摩洛哥/卡薩布蘭卡",
+    "latlng": [33.573109, -7.589843],
+    "timeZone": "Africa/Casablanca",
+    "id": 36
+  },
+  {
+    "region": "埃及/開羅",
+    "latlng": [30.043489, 31.235291],
+    "timeZone": "Africa/Cairo",
+    "id": 37
+  },
+  {
+    "region": "南非/約翰內斯堡",
+    "latlng": [-26.20145, 28.04549],
+    "timeZone": "Africa/Johannesburg",
+    "id": 38
+  },
+  {
+    "region": "加拿大/多倫多",
+    "latlng": [43.653225, -79.383186],
+    "timeZone": "America/Toronto",
+    "id": 39
+  },
+  {
+    "region": "亞利桑那州",
+    "latlng": [34.048927, -111.093735],
+    "timeZone": "US/Arizona",
+    "id": 40
+  },
+  {
+    "region": "阿拉斯加州",
+    "latlng": [64.200844, -149.493668],
+    "timeZone": "US/Alaska",
+    "id": 41
+  },
+  {
+    "region": "夏威夷",
+    "latlng": [19.896767, -155.582779],
+    "timeZone": "US/Hawaii",
+    "id": 42
+  },
+  {
+    "region": "墨西哥",
+    "latlng": [23.634501, -102.552788],
+    "timeZone": "America/Mexico_City",
+    "id": 43
+  },
+  {
+    "region": "巴西/聖保羅",
+    "latlng": [-23.55052, -46.633308],
+    "timeZone": "America/Sao_Paulo",
+    "id": 44
+  },
+  {
+    "region": "阿根廷/布宜諾斯艾利斯",
+    "latlng": [-34.603683, -58.381557],
+    "timeZone": "America/Buenos_Aires",
+    "id": 45
   }
 ]
